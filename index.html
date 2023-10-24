@@ -1,0 +1,205 @@
+  <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        circle 
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+         
+        <div class="card">
+            <img class="profile" src="profile.jpg" alt="">
+            <p>Sujit Sah</p>
+            <h3>Software Developer</h3>
+
+             
+            <div class="buttonCls">
+                <button onclick="openmodal()" id="openbtn" class="sharecls">
+                    <i class="fa fa-share"></i>
+                    <div>Share My Profile</div>
+                </button>
+                <button class="follow">Follow Me</button>
+            </div>
+
+          
+
+
+
+        </div>
+          
+
+                  
+
+
+
+    </div>
+    <div class="modalcard" id="modalcardactive">
+        <div class="modalHeadeer">
+            <div>Share My Profile</div>
+            <i class="closeBtn" class="fa fa-close"></i>
+
+        </div>
+
+        <div>
+            <p class="modaltext">Share this via</p>
+             icon 
+            <div class="modalContent">
+                <a class="fb" href="#">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+                <a class="insta" href="">
+                    <i class="fa fa-instagram"></i>
+
+                </a>
+                <a class="link" href="">
+                    <i class="fa fa-linkedin-square"></i>
+
+                </a>
+                <a class="gh" href="">
+                    <i class="fa fa-github"></i>
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" id="overlayactive"></div>
+    <script src="index.js"></script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Share Modal | Sujit</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+ 
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="./image/profile1.jpg" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Sujit Sah</h2>
+      </div>
+      <div class="designation">
+        <h3>Software Developer</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openModal()" class="btn-share btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>share my profile</div>
+        </button>
+
+        <button class="btn-follow btn-card">Follow me</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Share My Profile</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+
+    <div>
+
+      <h3>Share this via</h3>
+
+      
+      <div class="icon-container">
+        <a href="https://www.facebook.com/profile.php?id=100073761861671" class="icon" id="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/sujitsah1388" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/sujit8877123/" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/sahsujit" class="icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sujit-sah-619090274/" class="icon" id="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
